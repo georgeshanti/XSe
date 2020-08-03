@@ -10,12 +10,6 @@
 #include<xse/linux/Connection.hpp>
 #include<xse/exceptions/NetworkException.hpp>
 
-#define IPV4 AF_INET
-#define IPV6 AF_INET6
-
-#define TCP SOCK_STREAM
-#define UPD SOCK_DGRAM
-
 namespace XSe{
 	class Socket{
 		private:

@@ -1,0 +1,939 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Library API &mdash; XSe  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> XSe
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Basics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../basics/installation.html">Installation</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">XSe</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Library API</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/library_root.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="library-api">
+<h1>Library API<a class="headerlink" href="#library-api" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="class-hierarchy">
+<h2>Class Hierarchy<a class="headerlink" href="#class-hierarchy" title="Permalink to this headline">¶</a></h2>
+<ul class="treeView" id="class-treeView">
+  <li>
+    <ul class="collapsibleList">
+      <li>Namespace <a href="namespace_std.html#namespace-std">std</a><ul><li class="lastChild">Template <a href="structstd_1_1less_3_01_x_se_1_1_http_status_01_4.html#exhale-struct-structstd-1-1less-3-01-x-se-1-1-http-status-01-4">Struct less&lt; XSe::HttpStatus &gt;</a></li></ul></li><li class="lastChild">Namespace <a href="namespace_XSe.html#namespace-XSe">XSe</a><ul><li>Class <a href="class_x_se_1_1_connection.html#exhale-class-class-x-se-1-1-connection">Connection</a></li><li>Class <a href="class_x_se_1_1_http_method.html#exhale-class-class-x-se-1-1-http-method">HttpMethod</a></li><li>Class <a href="class_x_se_1_1_http_server.html#exhale-class-class-x-se-1-1-http-server">HttpServer</a></li><li>Class <a href="class_x_se_1_1_http_status.html#exhale-class-class-x-se-1-1-http-status">HttpStatus</a></li><li>Class <a href="class_x_se_1_1_http_version.html#exhale-class-class-x-se-1-1-http-version">HttpVersion</a></li><li>Class <a href="class_x_se_1_1_network_exception.html#exhale-class-class-x-se-1-1-network-exception">NetworkException</a></li><li>Class <a href="class_x_se_1_1_request.html#exhale-class-class-x-se-1-1-request">Request</a></li><li>Class <a href="class_x_se_1_1_response.html#exhale-class-class-x-se-1-1-response">Response</a></li><li>Class <a href="class_x_se_1_1_socket.html#exhale-class-class-x-se-1-1-socket">Socket</a></li><li>Class <a href="class_x_se_1_1_task_executor.html#exhale-class-class-x-se-1-1-task-executor">TaskExecutor</a></li><li class="lastChild">Class <a href="class_x_se_1_1_x_server.html#exhale-class-class-x-se-1-1-x-server">XServer</a></li></ul></li>
+    </ul>
+  </li><!-- only tree view element -->
+</ul><!-- /treeView class-treeView --></div>
+<div class="section" id="file-hierarchy">
+<h2>File Hierarchy<a class="headerlink" href="#file-hierarchy" title="Permalink to this headline">¶</a></h2>
+<ul class="treeView" id="file-treeView">
+  <li>
+    <ul class="collapsibleList">
+      <li class="lastChild">Directory <a href="dir_include.html#dir-include">include</a><ul><li class="lastChild">Directory <a href="dir_include_xse.html#dir-include-xse">xse</a><ul><li>Directory <a href="dir_include_xse_exceptions.html#dir-include-xse-exceptions">exceptions</a><ul><li class="lastChild">File <a href="file_include_xse_exceptions_NetworkException.hpp.html#file-include-xse-exceptions-NetworkException.hpp">NetworkException.hpp</a></li></ul></li><li>Directory <a href="dir_include_xse_linux.html#dir-include-xse-linux">linux</a><ul><li>File <a href="file_include_xse_linux_Connection.hpp.html#file-include-xse-linux-Connection.hpp">Connection.hpp</a></li><li class="lastChild">File <a href="file_include_xse_linux_Socket.hpp.html#file-include-xse-linux-Socket.hpp">Socket.hpp</a></li></ul></li><li>File <a href="file_include_xse_Connection.hpp.html#file-include-xse-Connection.hpp">Connection.hpp</a></li><li>File <a href="file_include_xse_HttpMethod.hpp.html#file-include-xse-HttpMethod.hpp">HttpMethod.hpp</a></li><li>File <a href="file_include_xse_HttpServer.hpp.html#file-include-xse-HttpServer.hpp">HttpServer.hpp</a></li><li>File <a href="file_include_xse_HttpStatus.hpp.html#file-include-xse-HttpStatus.hpp">HttpStatus.hpp</a></li><li>File <a href="file_include_xse_HttpVersion.hpp.html#file-include-xse-HttpVersion.hpp">HttpVersion.hpp</a></li><li>File <a href="file_include_xse_Request.hpp.html#file-include-xse-Request.hpp">Request.hpp</a></li><li>File <a href="file_include_xse_Response.hpp.html#file-include-xse-Response.hpp">Response.hpp</a></li><li>File <a href="file_include_xse_Socket.hpp.html#file-include-xse-Socket.hpp">Socket.hpp</a></li><li>File <a href="file_include_xse_TaskExecutor.hpp.html#file-include-xse-TaskExecutor.hpp">TaskExecutor.hpp</a></li><li class="lastChild">File <a href="file_include_xse_XServer.hpp.html#file-include-xse-XServer.hpp">XServer.hpp</a></li></ul></li></ul></li>
+    </ul>
+  </li><!-- only tree view element -->
+</ul><!-- /treeView file-treeView --></div>
+<div class="section" id="full-api">
+<h2>Full API<a class="headerlink" href="#full-api" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="namespaces">
+<h3>Namespaces<a class="headerlink" href="#namespaces" title="Permalink to this headline">¶</a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="namespace_std.html">Namespace std</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="namespace_std.html#classes">Classes</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="namespace_XSe.html">Namespace XSe</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="namespace_XSe.html#classes">Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="namespace_XSe.html#functions">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="namespace_XSe.html#typedefs">Typedefs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="namespace_XSe.html#variables">Variables</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="classes-and-structs">
+<h3>Classes and Structs<a class="headerlink" href="#classes-and-structs" title="Permalink to this headline">¶</a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structstd_1_1less_3_01_x_se_1_1_http_status_01_4.html">Template Struct less&lt; XSe::HttpStatus &gt;</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structstd_1_1less_3_01_x_se_1_1_http_status_01_4.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_x_se_1_1_connection.html">Class Connection</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_x_se_1_1_connection.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_x_se_1_1_http_method.html">Class HttpMethod</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_x_se_1_1_http_method.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_x_se_1_1_http_server.html">Class HttpServer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_x_se_1_1_http_server.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_x_se_1_1_http_status.html">Class HttpStatus</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_x_se_1_1_http_status.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_x_se_1_1_http_version.html">Class HttpVersion</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_x_se_1_1_http_version.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_x_se_1_1_network_exception.html">Class NetworkException</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_x_se_1_1_network_exception.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_x_se_1_1_network_exception.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_x_se_1_1_network_exception.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_x_se_1_1_request.html">Class Request</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_x_se_1_1_request.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_x_se_1_1_response.html">Class Response</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_x_se_1_1_response.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_x_se_1_1_socket.html">Class Socket</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_x_se_1_1_socket.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_x_se_1_1_task_executor.html">Class TaskExecutor</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_x_se_1_1_task_executor.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_x_se_1_1_x_server.html">Class XServer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_x_se_1_1_x_server.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="functions">
+<h3>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function__response_8hpp_1a3185778cf7a5eb0ded2ed0b1aecaadda.html">Function XSe::HEADER_REGEX</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function__response_8hpp_1a3185778cf7a5eb0ded2ed0b1aecaadda.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function__request_8hpp_1ac842054481d8b8bc1ae73f4bf57a9884.html">Function XSe::URL_REGEX</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function__request_8hpp_1ac842054481d8b8bc1ae73f4bf57a9884.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="variables">
+<h3>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1a70a07a4b3f06ab09c9eb7ef4e02d8ca2.html">Variable XSe::ACCEPTED</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1a70a07a4b3f06ab09c9eb7ef4e02d8ca2.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1ab0742bc838ea3008a23ad474ee4b2d8f.html">Variable XSe::BAD_GATEWAY</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1ab0742bc838ea3008a23ad474ee4b2d8f.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1ac2f66c0d17a6e4527eff8127ad47f12b.html">Variable XSe::BAD_REQUEST</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1ac2f66c0d17a6e4527eff8127ad47f12b.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1adbdb6db2327bc8eca73155a6056ec2cf.html">Variable XSe::CONFLICT</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1adbdb6db2327bc8eca73155a6056ec2cf.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_method_8hpp_1a90934d7fd0fcd7315dca4936b326ac08.html">Variable XSe::CONNECT</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_method_8hpp_1a90934d7fd0fcd7315dca4936b326ac08.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1a415fea91f820159128df6971d11b9b21.html">Variable XSe::CONTINUE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1a415fea91f820159128df6971d11b9b21.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1acf8fe6ef7fc5623d61033fad118118e5.html">Variable XSe::CREATED</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1acf8fe6ef7fc5623d61033fad118118e5.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_method_8hpp_1ae27045022e5e2234ff156b4eb5819612.html">Variable XSe::DELETE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_method_8hpp_1ae27045022e5e2234ff156b4eb5819612.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__request_8hpp_1af49b54220714ed7046361b8e83271df7.html">Variable XSe::DIR_REGEX</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__request_8hpp_1af49b54220714ed7046361b8e83271df7.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1a2b604aa968c9137f953feeedb07157e6.html">Variable XSe::EXPECTATION_FAILED</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1a2b604aa968c9137f953feeedb07157e6.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__x_server_8hpp_1abbb781ea1339e00753ef2c6be0f0a9f1.html">Variable XSe::FILETYPES</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__x_server_8hpp_1abbb781ea1339e00753ef2c6be0f0a9f1.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1a87e51e59c1f8e0a0860f555ec31b27da.html">Variable XSe::FORBIDDEN</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1a87e51e59c1f8e0a0860f555ec31b27da.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1a4c2293f75b0554cef07a6866bea4b37a.html">Variable XSe::FOUND</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1a4c2293f75b0554cef07a6866bea4b37a.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1a3207ce2b56fff0c16e6091fdde8d3637.html">Variable XSe::GATEWAY_TIMEOUT</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1a3207ce2b56fff0c16e6091fdde8d3637.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_method_8hpp_1a9974b443bcc336f4e42befdd16432280.html">Variable XSe::GET</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_method_8hpp_1a9974b443bcc336f4e42befdd16432280.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1a5423573eda7ebcb750638a5b04e54794.html">Variable XSe::GONE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1a5423573eda7ebcb750638a5b04e54794.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_method_8hpp_1ab429a1d2d1f89f6bc1cbe07ed44b61ba.html">Variable XSe::HEAD</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_method_8hpp_1ab429a1d2d1f89f6bc1cbe07ed44b61ba.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_version_8hpp_1a68a456011da1a1c3a034407f8d731f6c.html">Variable XSe::HTTP1</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_version_8hpp_1a68a456011da1a1c3a034407f8d731f6c.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_version_8hpp_1a243a85b9ae591bcff32b506a2fcee496.html">Variable XSe::HTTP1_1</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_version_8hpp_1a243a85b9ae591bcff32b506a2fcee496.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_version_8hpp_1a5226585db705dffb20fbddd08f02b90a.html">Variable XSe::HTTP2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_version_8hpp_1a5226585db705dffb20fbddd08f02b90a.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1a4dd4557f79d0de83a017bb2131ab1eb0.html">Variable XSe::HTTP_VERSION_NOT_SUPPORTED</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1a4dd4557f79d0de83a017bb2131ab1eb0.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1ac2877c4e6527c07a161892fa8d6ff4f0.html">Variable XSe::INTERNAL_SERVER_ERROR</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1ac2877c4e6527c07a161892fa8d6ff4f0.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_method_8hpp_1a1324d44fd84dd4aed3983b5eb8810dec.html">Variable XSe::INVALID_METHOD</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_method_8hpp_1a1324d44fd84dd4aed3983b5eb8810dec.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__request_8hpp_1a1321e6cfc23e8014f7e56f1deb017573.html">Variable XSe::INVALID_REQUEST</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__request_8hpp_1a1321e6cfc23e8014f7e56f1deb017573.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__response_8hpp_1a2ad05b484ff70f3ddc30d5edaf40521b.html">Variable XSe::INVALID_RESPONSE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__response_8hpp_1a2ad05b484ff70f3ddc30d5edaf40521b.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1a49c7a6a985117b3efbbdfff58adc0255.html">Variable XSe::INVALID_STATUS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1a49c7a6a985117b3efbbdfff58adc0255.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_version_8hpp_1a9495c479d3c0807d679781200c02b021.html">Variable XSe::INVALID_VERSION</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_version_8hpp_1a9495c479d3c0807d679781200c02b021.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1a3a3dfaad1274f51cea3d4feca0801b0b.html">Variable XSe::LENGTH_REQUIRED</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1a3a3dfaad1274f51cea3d4feca0801b0b.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1ae1e7e60b3a2e7017bed8d528347c1e89.html">Variable XSe::METHOD_NOT_ALLOWED</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1ae1e7e60b3a2e7017bed8d528347c1e89.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_method_8hpp_1a5910242be1183305b8811b6962360ff2.html">Variable XSe::METHODS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_method_8hpp_1a5910242be1183305b8811b6962360ff2.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1ab1099363af40c93c5aca2c198d7f7340.html">Variable XSe::MOVED_PERMANENTLY</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1ab1099363af40c93c5aca2c198d7f7340.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1a61f7aa7cd57313140a438ea566be7569.html">Variable XSe::MULTIPLE_CHOICES</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1a61f7aa7cd57313140a438ea566be7569.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1adb04c74f45b9e30401780d695982c078.html">Variable XSe::NO_CONTENT</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1adb04c74f45b9e30401780d695982c078.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1a0c5d666b9fa0fa37a7395d0938754e6b.html">Variable XSe::NON_AUTHORITATIVE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1a0c5d666b9fa0fa37a7395d0938754e6b.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1af2763a22f3df3746180419e0ce8b4b71.html">Variable XSe::NOT_ACCEPTABLE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1af2763a22f3df3746180419e0ce8b4b71.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1a8dad7b99753787c64c6b859cc819823b.html">Variable XSe::NOT_FOUND</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1a8dad7b99753787c64c6b859cc819823b.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1ae156d9b3125f24686273abf3ab2c347d.html">Variable XSe::NOT_IMPLEMENTED</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1ae156d9b3125f24686273abf3ab2c347d.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1ae0f57d07ca9bd00743e98b9ba484bd21.html">Variable XSe::NOT_MODIFIED</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1ae0f57d07ca9bd00743e98b9ba484bd21.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1a9f95bc62d497c6f79e1301adac9501ee.html">Variable XSe::OK</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1a9f95bc62d497c6f79e1301adac9501ee.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_method_8hpp_1a277e35f6f15e55d99fc4de4e4719ef9b.html">Variable XSe::OPTIONS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_method_8hpp_1a277e35f6f15e55d99fc4de4e4719ef9b.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1a3fa4eb4ab159f553932b8d4f7b151739.html">Variable XSe::PARTIAL_CONTENT</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1a3fa4eb4ab159f553932b8d4f7b151739.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_method_8hpp_1afab4f8490e57d6286f64d9989d4500d3.html">Variable XSe::PATCH</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_method_8hpp_1afab4f8490e57d6286f64d9989d4500d3.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1afaf7ade692fb753b7cd833d37793f827.html">Variable XSe::PAYMENT_REQUIRED</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1afaf7ade692fb753b7cd833d37793f827.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_method_8hpp_1a2810e7d6352edf5561a2283b9b2a6a8a.html">Variable XSe::POST</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_method_8hpp_1a2810e7d6352edf5561a2283b9b2a6a8a.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1a41290b615b9b7d932e95351407f0c3ee.html">Variable XSe::PRECONDITION_FAILED</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1a41290b615b9b7d932e95351407f0c3ee.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1ad8a6b5e71302d3db98a2f0ca3cabaae5.html">Variable XSe::PROXY_AUTHENTICATION_REQUIRED</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1ad8a6b5e71302d3db98a2f0ca3cabaae5.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_method_8hpp_1af3f0c78e8b5c5a75a5b66700268aba6c.html">Variable XSe::PUT</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_method_8hpp_1af3f0c78e8b5c5a75a5b66700268aba6c.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1ad1ce993c9415c48ce4a343fd2820dc50.html">Variable XSe::REQUEST_ENTITY_TOO_LARGE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1ad1ce993c9415c48ce4a343fd2820dc50.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1a15c17fafed2f4cdb8ae04221d32290ad.html">Variable XSe::REQUEST_TIMEOUT</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1a15c17fafed2f4cdb8ae04221d32290ad.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1ab364c1ac218bba818ca5955c86276618.html">Variable XSe::REQUEST_URL_TOO_LONG</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1ab364c1ac218bba818ca5955c86276618.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1af212d6cb7df801131db648eca96e807f.html">Variable XSe::REQUESTED_RANGE_NOT_SATISFIABLE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1af212d6cb7df801131db648eca96e807f.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1a7acafff4ca813fa1e8b281f3c3a47f54.html">Variable XSe::RESET_CONTENT</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1a7acafff4ca813fa1e8b281f3c3a47f54.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1a9906aeb72af77f84e6ddb87c894f8bc5.html">Variable XSe::SEE_OTHER</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1a9906aeb72af77f84e6ddb87c894f8bc5.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1aee8ebdf010d8763733a5a3306d34522d.html">Variable XSe::SERVICE_UNAVAILABLE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1aee8ebdf010d8763733a5a3306d34522d.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1af582379f1d562a40060f5106ee887919.html">Variable XSe::STATUSES</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1af582379f1d562a40060f5106ee887919.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1aefc97159311504595716b05d42b4e162.html">Variable XSe::SWITCHING_PROTOCOLS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1aefc97159311504595716b05d42b4e162.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1a8161771c337c041e681a9d18191d8eb4.html">Variable XSe::TEMPORARY_REDIRECT</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1a8161771c337c041e681a9d18191d8eb4.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_method_8hpp_1a76f1868f5188a701e0d0b562dfa49199.html">Variable XSe::TRACE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_method_8hpp_1a76f1868f5188a701e0d0b562dfa49199.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1ae8b5a7512221138fd95d29676e4c8cba.html">Variable XSe::UNAUTHORIZED</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1ae8b5a7512221138fd95d29676e4c8cba.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1a71c2e9a2103b4e29f084aa379d23dcf1.html">Variable XSe::UNSUPPORTED_MEDIA_TYPE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1a71c2e9a2103b4e29f084aa379d23dcf1.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1a6fdc7031ec4f032e7522df53fd188b7d.html">Variable XSe::UNUSED</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1a6fdc7031ec4f032e7522df53fd188b7d.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_status_8hpp_1a25dfb7d852af1f042a8989e9e26e200e.html">Variable XSe::USE_PROXY</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_status_8hpp_1a25dfb7d852af1f042a8989e9e26e200e.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__http_version_8hpp_1aa24632b28d553aa819a40effc58f1985.html">Variable XSe::VERSIONS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__http_version_8hpp_1aa24632b28d553aa819a40effc58f1985.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="defines">
+<h3>Defines<a class="headerlink" href="#defines" title="Permalink to this headline">¶</a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define_linux_2_connection_8hpp_1ae3d82b086c0b0e4ddac202078f01f120.html">Define IPV4</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define_linux_2_connection_8hpp_1ae3d82b086c0b0e4ddac202078f01f120.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define_linux_2_connection_8hpp_1a06e69325d79f0db014c22b1834581d56.html">Define IPV6</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define_linux_2_connection_8hpp_1a06e69325d79f0db014c22b1834581d56.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define_linux_2_connection_8hpp_1a383cc726612c3f31cc235472be55516b.html">Define TCP</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define_linux_2_connection_8hpp_1a383cc726612c3f31cc235472be55516b.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define_linux_2_connection_8hpp_1aa43b91252419a8c2643d7f66a463e2c7.html">Define UPD</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define_linux_2_connection_8hpp_1aa43b91252419a8c2643d7f66a463e2c7.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="typedefs">
+<h3>Typedefs<a class="headerlink" href="#typedefs" title="Permalink to this headline">¶</a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef__http_server_8hpp_1a39730e92c0f49d7b89531c51318e5a67.html">Typedef XSe::Handler</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef__http_server_8hpp_1a39730e92c0f49d7b89531c51318e5a67.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef__x_server_8hpp_1a32fb7c41267637e95ca037a68361174c.html">Typedef XSe::MethodHandler</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef__x_server_8hpp_1a32fb7c41267637e95ca037a68361174c.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef__http_method_8hpp_1ad7a32c12602c2590677493f9b107de9d.html">Typedef XSe::Methods</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef__http_method_8hpp_1ad7a32c12602c2590677493f9b107de9d.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, George Thomas Shanti
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,303 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Program Listing for File HttpStatus.hpp &mdash; XSe  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> XSe
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Basics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../basics/installation.html">Installation</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">XSe</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Program Listing for File HttpStatus.hpp</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/program_listing_file_include_xse_HttpStatus.hpp.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="program-listing-for-file-httpstatus-hpp">
+<span id="program-listing-file-include-xse-httpstatus-hpp"></span><h1>Program Listing for File HttpStatus.hpp<a class="headerlink" href="#program-listing-for-file-httpstatus-hpp" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="file_include_xse_HttpStatus.hpp.html#file-include-xse-httpstatus-hpp"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">include/xse/HttpStatus.hpp</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#ifndef XSE_HTTP_STATUS_H</span>
+<span class="cp">#define XSE_HTTP_STATUS_H</span>
+
+<span class="cp">#include</span><span class="cpf">&lt;vector&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="cpf">&lt;string&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="cpf">&lt;cstdint&gt;</span><span class="cp"></span>
+
+<span class="k">namespace</span> <span class="n">XSe</span><span class="p">{</span>
+
+    <span class="c1">// HTTP Status</span>
+    <span class="k">class</span> <span class="nc">HttpStatus</span><span class="p">{</span>
+        <span class="k">public</span><span class="o">:</span>
+        <span class="kt">int</span> <span class="n">code</span><span class="p">;</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">str</span><span class="p">;</span>
+
+        <span class="n">HttpStatus</span><span class="p">(</span><span class="kt">int</span> <span class="n">c</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">s</span><span class="p">)</span><span class="o">:</span><span class="n">code</span><span class="p">(</span><span class="n">c</span><span class="p">),</span><span class="n">str</span><span class="p">(</span><span class="n">s</span><span class="p">){};</span>
+        <span class="n">HttpStatus</span><span class="p">()</span><span class="o">:</span><span class="n">code</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span><span class="n">str</span><span class="p">(</span><span class="s">&quot;INVALID&quot;</span><span class="p">){};</span>
+
+        <span class="kt">bool</span> <span class="k">operator</span><span class="o">==</span><span class="p">(</span><span class="n">HttpStatus</span><span class="o">&amp;</span> <span class="n">__x</span><span class="p">)</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="k">this</span><span class="o">-&gt;</span><span class="n">code</span><span class="o">==</span><span class="n">__x</span><span class="p">.</span><span class="n">code</span><span class="p">;</span> <span class="p">};</span>
+        <span class="kt">bool</span> <span class="k">operator</span><span class="o">&lt;</span><span class="p">(</span><span class="k">const</span> <span class="n">HttpStatus</span><span class="o">&amp;</span> <span class="n">__x</span><span class="p">)</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="k">this</span><span class="o">-&gt;</span><span class="n">code</span><span class="o">&lt;</span><span class="n">__x</span><span class="p">.</span><span class="n">code</span><span class="p">;</span> <span class="p">};</span>
+    <span class="p">};</span>
+
+    <span class="c1">//Http method constants</span>
+    <span class="k">const</span> <span class="n">HttpStatus</span> <span class="nf">INVALID_STATUS</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s">&quot;INVALID&quot;</span><span class="p">);</span>
+
+    <span class="k">const</span> <span class="n">HttpStatus</span> <span class="nf">CONTINUE</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="s">&quot;Continue&quot;</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">HttpStatus</span> <span class="nf">SWITCHING_PROTOCOLS</span><span class="p">(</span><span class="mi">101</span><span class="p">,</span> <span class="s">&quot;Switching Protocols&quot;</span><span class="p">);</span>
+
+    <span class="k">const</span> <span class="n">HttpStatus</span> <span class="nf">OK</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span> <span class="s">&quot;OK&quot;</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">HttpStatus</span> <span class="nf">CREATED</span><span class="p">(</span><span class="mi">201</span><span class="p">,</span> <span class="s">&quot;Created&quot;</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">HttpStatus</span> <span class="nf">ACCEPTED</span><span class="p">(</span><span class="mi">202</span><span class="p">,</span> <span class="s">&quot;Accepted&quot;</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">HttpStatus</span> <span class="nf">NON_AUTHORITATIVE</span><span class="p">(</span><span class="mi">203</span><span class="p">,</span> <span class="s">&quot;Non-authoritative&quot;</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">HttpStatus</span> <span class="nf">NO_CONTENT</span><span class="p">(</span><span class="mi">204</span><span class="p">,</span> <span class="s">&quot;No Content&quot;</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">HttpStatus</span> <span class="nf">RESET_CONTENT</span><span class="p">(</span><span class="mi">205</span><span class="p">,</span> <span class="s">&quot;Reset Content&quot;</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">HttpStatus</span> <span class="nf">PARTIAL_CONTENT</span><span class="p">(</span><span class="mi">206</span><span class="p">,</span> <span class="s">&quot;Partial Content&quot;</span><span class="p">);</span>
+
+    <span class="k">const</span> <span class="n">HttpStatus</span> <span class="nf">MULTIPLE_CHOICES</span><span class="p">(</span><span class="mi">300</span><span class="p">,</span> <span class="s">&quot;Multiple Choices&quot;</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">HttpStatus</span> <span class="nf">MOVED_PERMANENTLY</span><span class="p">(</span><span class="mi">301</span><span class="p">,</span> <span class="s">&quot;Moved Permanently&quot;</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">HttpStatus</span> <span class="nf">FOUND</span><span class="p">(</span><span class="mi">302</span><span class="p">,</span> <span class="s">&quot;Found&quot;</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">HttpStatus</span> <span class="nf">SEE_OTHER</span><span class="p">(</span><span class="mi">303</span><span class="p">,</span> <span class="s">&quot;See Other&quot;</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">HttpStatus</span> <span class="nf">NOT_MODIFIED</span><span class="p">(</span><span class="mi">304</span><span class="p">,</span> <span class="s">&quot;Not Modified&quot;</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">HttpStatus</span> <span class="nf">USE_PROXY</span><span class="p">(</span><span class="mi">305</span><span class="p">,</span> <span class="s">&quot;Use Proxy&quot;</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">HttpStatus</span> <span class="nf">UNUSED</span><span class="p">(</span><span class="mi">306</span><span class="p">,</span> <span class="s">&quot;Unused&quot;</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">HttpStatus</span> <span class="nf">TEMPORARY_REDIRECT</span><span class="p">(</span><span class="mi">307</span><span class="p">,</span> <span class="s">&quot;Temporary Redirect&quot;</span><span class="p">);</span>
+
+    <span class="k">const</span> <span class="n">HttpStatus</span> <span class="nf">BAD_REQUEST</span><span class="p">(</span><span class="mi">400</span><span class="p">,</span> <span class="s">&quot;Bad Request&quot;</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">HttpStatus</span> <span class="nf">UNAUTHORIZED</span><span class="p">(</span><span class="mi">401</span><span class="p">,</span> <span class="s">&quot;Unauthorized&quot;</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">HttpStatus</span> <span class="nf">PAYMENT_REQUIRED</span><span class="p">(</span><span class="mi">402</span><span class="p">,</span> <span class="s">&quot;Payment Required&quot;</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">HttpStatus</span> <span class="nf">FORBIDDEN</span><span class="p">(</span><span class="mi">403</span><span class="p">,</span> <span class="s">&quot;Forbidden&quot;</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">HttpStatus</span> <span class="nf">NOT_FOUND</span><span class="p">(</span><span class="mi">404</span><span class="p">,</span> <span class="s">&quot;Not Found&quot;</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">HttpStatus</span> <span class="nf">METHOD_NOT_ALLOWED</span><span class="p">(</span><span class="mi">405</span><span class="p">,</span> <span class="s">&quot;Method Not Allowed&quot;</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">HttpStatus</span> <span class="nf">NOT_ACCEPTABLE</span><span class="p">(</span><span class="mi">406</span><span class="p">,</span> <span class="s">&quot;Not Acceptable&quot;</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">HttpStatus</span> <span class="nf">PROXY_AUTHENTICATION_REQUIRED</span><span class="p">(</span><span class="mi">407</span><span class="p">,</span> <span class="s">&quot;Proxy Authentication Required&quot;</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">HttpStatus</span> <span class="nf">REQUEST_TIMEOUT</span><span class="p">(</span><span class="mi">408</span><span class="p">,</span> <span class="s">&quot;Request Timeout&quot;</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">HttpStatus</span> <span class="nf">CONFLICT</span><span class="p">(</span><span class="mi">409</span><span class="p">,</span> <span class="s">&quot;Conflict&quot;</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">HttpStatus</span> <span class="nf">GONE</span><span class="p">(</span><span class="mi">410</span><span class="p">,</span> <span class="s">&quot;Gone&quot;</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">HttpStatus</span> <span class="nf">LENGTH_REQUIRED</span><span class="p">(</span><span class="mi">411</span><span class="p">,</span> <span class="s">&quot;Length Required&quot;</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">HttpStatus</span> <span class="nf">PRECONDITION_FAILED</span><span class="p">(</span><span class="mi">412</span><span class="p">,</span> <span class="s">&quot;Precondition Failed&quot;</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">HttpStatus</span> <span class="nf">REQUEST_ENTITY_TOO_LARGE</span><span class="p">(</span><span class="mi">413</span><span class="p">,</span> <span class="s">&quot;Request Entity Too Large&quot;</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">HttpStatus</span> <span class="nf">REQUEST_URL_TOO_LONG</span><span class="p">(</span><span class="mi">414</span><span class="p">,</span> <span class="s">&quot;Request-url Too Long&quot;</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">HttpStatus</span> <span class="nf">UNSUPPORTED_MEDIA_TYPE</span><span class="p">(</span><span class="mi">415</span><span class="p">,</span> <span class="s">&quot;Unsupported Media Type&quot;</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">HttpStatus</span> <span class="nf">REQUESTED_RANGE_NOT_SATISFIABLE</span><span class="p">(</span><span class="mi">416</span><span class="p">,</span> <span class="s">&quot;Requested Range Not Satisfiable&quot;</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">HttpStatus</span> <span class="nf">EXPECTATION_FAILED</span><span class="p">(</span><span class="mi">417</span><span class="p">,</span> <span class="s">&quot;Expectation Failed&quot;</span><span class="p">);</span>
+
+    <span class="k">const</span> <span class="n">HttpStatus</span> <span class="nf">INTERNAL_SERVER_ERROR</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="s">&quot;Internal Server Error&quot;</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">HttpStatus</span> <span class="nf">NOT_IMPLEMENTED</span><span class="p">(</span><span class="mi">501</span><span class="p">,</span> <span class="s">&quot;Not Implemented&quot;</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">HttpStatus</span> <span class="nf">BAD_GATEWAY</span><span class="p">(</span><span class="mi">502</span><span class="p">,</span> <span class="s">&quot;Bad Gateway&quot;</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">HttpStatus</span> <span class="nf">SERVICE_UNAVAILABLE</span><span class="p">(</span><span class="mi">503</span><span class="p">,</span> <span class="s">&quot;Service Unavailable&quot;</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">HttpStatus</span> <span class="nf">GATEWAY_TIMEOUT</span><span class="p">(</span><span class="mi">504</span><span class="p">,</span> <span class="s">&quot;Gateway Timeout&quot;</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">HttpStatus</span> <span class="nf">HTTP_VERSION_NOT_SUPPORTED</span><span class="p">(</span><span class="mi">505</span><span class="p">,</span> <span class="s">&quot;HTTP Version Not Supported&quot;</span><span class="p">);</span>
+
+    <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">HttpStatus</span><span class="o">&gt;</span> <span class="n">STATUSES</span><span class="p">{</span>
+        <span class="n">CONTINUE</span><span class="p">,</span> <span class="n">SWITCHING_PROTOCOLS</span><span class="p">,</span> <span class="n">OK</span><span class="p">,</span> <span class="n">CREATED</span><span class="p">,</span> <span class="n">ACCEPTED</span><span class="p">,</span> <span class="n">NON_AUTHORITATIVE</span><span class="p">,</span><span class="n">NO_CONTENT</span><span class="p">,</span> <span class="n">RESET_CONTENT</span><span class="p">,</span>
+        <span class="n">PARTIAL_CONTENT</span><span class="p">,</span> <span class="n">MULTIPLE_CHOICES</span><span class="p">,</span> <span class="n">MOVED_PERMANENTLY</span><span class="p">,</span> <span class="n">FOUND</span><span class="p">,</span> <span class="n">SEE_OTHER</span><span class="p">,</span> <span class="n">NOT_MODIFIED</span><span class="p">,</span><span class="n">USE_PROXY</span><span class="p">,</span>
+        <span class="n">UNUSED</span><span class="p">,</span> <span class="n">TEMPORARY_REDIRECT</span><span class="p">,</span> <span class="n">BAD_REQUEST</span><span class="p">,</span> <span class="n">UNAUTHORIZED</span><span class="p">,</span> <span class="n">PAYMENT_REQUIRED</span><span class="p">,</span> <span class="n">FORBIDDEN</span><span class="p">,</span> <span class="n">NOT_FOUND</span><span class="p">,</span>
+        <span class="n">METHOD_NOT_ALLOWED</span><span class="p">,</span> <span class="n">NOT_ACCEPTABLE</span><span class="p">,</span> <span class="n">PROXY_AUTHENTICATION_REQUIRED</span><span class="p">,</span> <span class="n">REQUEST_TIMEOUT</span><span class="p">,</span> <span class="n">CONFLICT</span><span class="p">,</span> <span class="n">GONE</span><span class="p">,</span>
+        <span class="n">LENGTH_REQUIRED</span><span class="p">,</span> <span class="n">PRECONDITION_FAILED</span><span class="p">,</span> <span class="n">REQUEST_ENTITY_TOO_LARGE</span><span class="p">,</span> <span class="n">REQUEST_URL_TOO_LONG</span><span class="p">,</span> <span class="n">UNSUPPORTED_MEDIA_TYPE</span><span class="p">,</span>
+        <span class="n">REQUESTED_RANGE_NOT_SATISFIABLE</span><span class="p">,</span> <span class="n">EXPECTATION_FAILED</span><span class="p">,</span> <span class="n">INTERNAL_SERVER_ERROR</span><span class="p">,</span> <span class="n">NOT_IMPLEMENTED</span><span class="p">,</span> <span class="n">BAD_GATEWAY</span><span class="p">,</span>
+        <span class="n">SERVICE_UNAVAILABLE</span><span class="p">,</span> <span class="n">GATEWAY_TIMEOUT</span><span class="p">,</span> <span class="n">HTTP_VERSION_NOT_SUPPORTED</span>
+    <span class="p">};</span>
+<span class="p">}</span>
+
+<span class="k">namespace</span> <span class="n">std</span>
+<span class="p">{</span>
+    <span class="k">template</span><span class="o">&lt;&gt;</span> <span class="k">struct</span>  <span class="n">less</span><span class="o">&lt;</span><span class="n">XSe</span><span class="o">::</span><span class="n">HttpStatus</span><span class="o">&gt;</span>
+    <span class="p">{</span>
+        <span class="kt">bool</span> <span class="k">operator</span><span class="p">()</span> <span class="p">(</span><span class="k">const</span> <span class="n">XSe</span><span class="o">::</span><span class="n">HttpStatus</span><span class="o">&amp;</span> <span class="n">lhs</span><span class="p">,</span> <span class="k">const</span> <span class="n">XSe</span><span class="o">::</span><span class="n">HttpStatus</span><span class="o">&amp;</span> <span class="n">rhs</span><span class="p">)</span> <span class="k">const</span>
+        <span class="p">{</span>
+            <span class="k">return</span> <span class="n">lhs</span><span class="p">.</span><span class="n">code</span> <span class="o">&lt;</span> <span class="n">rhs</span><span class="p">.</span><span class="n">code</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">};</span>
+
+<span class="p">}</span>
+
+<span class="cp">#endif</span>
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, George Thomas Shanti
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,5 +1,7 @@
 # XSe::XServer
 
+Read the docs at <https://georgeshanti.github.io/XSe>
+
 XSe is a lightweight HTTP/1.1 webserver library for C++. It is designed to be just a webserver and nothing more. Primary object is to build a  high performance application server that can be run on lower spec machines. XSe uses the standard library for data strcutures and pthreads for threading. The functions to setup APIs and routes are inspired by ExpressJS and Flask.
 
 Things XSe::XServer will do:
