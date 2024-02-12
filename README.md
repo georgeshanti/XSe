@@ -119,7 +119,7 @@ res.setHeader("Content-Type", "application/json")
         - Sets a header key-value pair for the response
 
     Arguments
-        - key: string specifying the header key/name
+        - key: string specifying the header name
         - value: string specifying the header value
 
     Return
